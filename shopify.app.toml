@@ -1,0 +1,26 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "Stock in Motion-UAT Public"
+client_id = "0dfd3199d9d26fe87307510ba8b67c21"
+application_url = "https://testuat-sim.zugdev.com/api/Shopify/Install"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = [
+  "https://testuat-sim.zugdev.com/api/Shopify/Authorize",
+  "https://testuat-sim.zugdev.com/api/Shopify/Install",
+  "https://testuat-sim.zugdev.com/"
+]
+
+[webhooks]
+api_version = "2022-07"
+
+[pos]
+embedded = false
+
+[build]
+dev_store_url = "bike-o-city.myshopify.com"
